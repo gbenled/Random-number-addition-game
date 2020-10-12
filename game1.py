@@ -6,6 +6,7 @@ Created by Damilola Gbenle
 import tkinter as tk
 import shelve  
 import numpy as np
+import random
 from tkinter import messagebox 
 
 #displays first page and makes it global so it can be used anywhere in the code
@@ -148,7 +149,7 @@ def user_name ():
         def update_btn_text():
             global k1,k2
             if val1["text"] == str(k1) or val2["text"] == str(k2):
-                val = np.random.randint(low = -4, high = 7, size = 2)
+                val = random.sample(range(-4,7), 2)
 
                 k1 = str(val[0])
                 k2 = str(val[1])
@@ -364,7 +365,7 @@ def user_name ():
         #making val(random numbe generated with numpy), k1(1st value in val), k2(2nd value in val) all global
         global val,k1,k2
         #val saves the random numbers generated with numpy
-        val = np.random.randint(low = -4, high = 7, size = 2)
+        val = random.sample(range(-4,6), 2)
         k1 = str(val[0])
         k2 = str(val[1])
       
