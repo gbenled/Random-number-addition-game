@@ -5,6 +5,7 @@ Created by Damilola Gbenle
 
 import tkinter as tk
 import shelve  
+import numpy as np
 import random
 from tkinter import messagebox 
 
